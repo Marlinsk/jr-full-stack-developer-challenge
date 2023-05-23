@@ -1,5 +1,6 @@
 # Projeto FullStack utilizando React.js & Nest.js
-![https://nodejs.org/en/docs](https://img.shields.io/static/v1?label&?style=flat&logo=nodedotjs&logoColor=339933&message=node.js&color=026e00) 
+![https://nodejs.org/en/docs](https://img.shields.io/static/v1?label&?style=flat&logo=nodedotjs&logoColor=339933&message=node.js&color=026e00)
+![https://swagger.io/tools/swagger-ui/](https://img.shields.io/static/v1?label&?style=flat&logo=swagger&logoColor=173647&message=swagger&color=85EA2D)
 ![https://www.npmjs.com/](https://img.shields.io/static/v1?label&?style=flat&logo=npm&logoColor=FFFFFF&message=npm&color=CB3837)
 ![https://react.dev](https://img.shields.io/static/v1?label&?style=flat&logo=react&logoColor=61DAFB&message=react.js&color=087ea4&)
 ![https://vitejs.dev](https://img.shields.io/static/v1?label&?style=flat&logo=vite&logoColor=FFC93C&message=vite&color=646CFF)
@@ -41,7 +42,7 @@ npm i
 > Terminando de instalar todas as dependências, os dois projetos estão prontos para serem executados, para entender como executar cada um, siga o passo a passo a seguir.
 
 ## Manual do projeto back-end
-Para rodar a aplicação back-end, vá para o terminal onde está aberto a pasta back-end e digite o seguinte comando:
+Para rodar a aplicação back-end, vá para o terminal onde está aberto a pasta backend e digite o seguinte comando:
 ```
 npm run start:dev
 ```
@@ -51,7 +52,7 @@ Porta em que o projeto roda
 ```
 localhost:4015
 ```
-> O projeto rodará na porta 4015, caso deseje mudar vá para o arquivo main e mude a porta. **Aviso:** Alterando a porta, será necessário que mude também no front-end. 
+> O projeto rodará na porta 4015, caso deseje mudar vá para o arquivo main e mude a porta. **Aviso:** Alterando a porta, será necessário que mude também no front-end na pasta src/api/Api.ts. 
 
 ### Acessando o prisma studio
 O banco de dados utilizado no projeto foi o sqlite, que é um banco de dados que fica armazenado internamente na pasta do projeto, facilitando a conexão e podendo ser acessado para modificar os dados das tabelas, utilizando-se tanto pelo **beekeeper studio** quanto pelo **prisma**. Para esta ocasião utilizaremos o **prisma**.
@@ -77,7 +78,7 @@ Cria uma empresa
 
 > /empresa
 
-**GET** FindOnde:
+**GET** Find Empresa by ID:
 
 Mostra os dados de uma empresa, é necessário passar o ID da empresa pelas Path Variables do request.
 
@@ -100,4 +101,13 @@ Nesta rota é possível fazer a atualização nos dados da empresa, é necessár
 Nesta rota é possível deletar uma empresa, pelo ID informado no Path Variables.
 
 > /empresa/:id
+
+## Manual do projeto front-end
+Para rodar a aplicação front-end, á para o terminal onde está aberto a pasta frontend e digite o seguinte comando: 
+```
+npm run dev
+```
+> Quando a aplicação começar a rodar, clique no link que está escrito no console do terminal para poder acessar a aplicação na web.
+
+**Obs.:** Para poder visualizar a tabela, é necessário que o back-end esteja rodando e que tenha dados no banco de dados.
 
