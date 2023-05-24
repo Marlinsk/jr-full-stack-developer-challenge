@@ -9,7 +9,7 @@
 ![https://nestjs.com](https://img.shields.io/static/v1?label&?style=flat&logo=nestjs&logoColor=E0234E&message=nest.js&color=111)
 ![https://www.prisma.io](https://img.shields.io/static/v1?label&?style=flat&logo=prisma&logoColor=FFFFFF&message=prisma&color=2D3748)
 
-Projeto web fullstack simples desenvolvido para teste de conhecimento prático
+Projeto web fullstack simples desenvolvido para teste de conhecimento prático de back-end e front-end.
 
 ### 🛠 Tecnologias utilizadas no projeto de back-end
 - Nodejs 
