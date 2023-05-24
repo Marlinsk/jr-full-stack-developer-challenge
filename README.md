@@ -72,7 +72,7 @@ Para acessar o prisma studio, vá para o terminal do back-end e digite o seguint
 ```
 npx prisma studio
 ```
-> Após a execução irá abrir uma página da web onde nela você acessará as tabelas, criar dados, modificá-los e deletá-los. Para sair basta fechar a guia dele no browser.
+> Após a execução irá abrir uma página da web onde nela você acessará as tabelas, criar dados, modificá-los e deletá-los. Para sair basta fechar a guia dele no browser, e apertar **CTRL + C** no terminal.
 
 ### Acessando a documentação OpenAPI das rotas http na web
 Para acessar a documentação da OpenAPI basta digitar a seguinte url
