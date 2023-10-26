@@ -1,4 +1,4 @@
-# Projeto FullStack web utilizando React.js & Nest.js
+# Full-stack web project with React.js & Nest.js.
 ![https://nodejs.org/en/docs](https://img.shields.io/static/v1?label&?style=flat&logo=nodedotjs&logoColor=339933&message=node.js&color=026e00)
 ![https://swagger.io/tools/swagger-ui/](https://img.shields.io/static/v1?label&?style=flat&logo=swagger&logoColor=173647&message=swagger&color=85EA2D)
 ![https://www.npmjs.com/](https://img.shields.io/static/v1?label&?style=flat&logo=npm&logoColor=FFFFFF&message=npm&color=CB3837)
@@ -9,17 +9,15 @@
 ![https://nestjs.com](https://img.shields.io/static/v1?label&?style=flat&logo=nestjs&logoColor=E0234E&message=nest.js&color=111)
 ![https://www.prisma.io](https://img.shields.io/static/v1?label&?style=flat&logo=prisma&logoColor=FFFFFF&message=prisma&color=2D3748)
 
-Projeto web fullstack simples desenvolvido para teste de conhecimento prático de back-end e front-end.
+A simple full-stack web project developed for practical knowledge testing of both back-end and front-end.
 
-### 🛠 Tecnologias utilizadas no projeto de back-end
+### 🛠 Technologies
 - Nodejs 
 - Nestjs 
 - @nestjs/swagger
 - Typescript 
 - PrismaORM 
 - Sqlite
-
-### 💻 Tecnologias utilizadas no projeto de front-end
 - React 
 - Vite 
 - Typescript 
@@ -30,87 +28,88 @@ Projeto web fullstack simples desenvolvido para teste de conhecimento prático d
 - Radix-ui
 - Radix-icons
 
-## Após clonar o repositório siga os seguintes passos para baixar as dependências
-Para seguir nesta etapa é necessário que você tenha conhecimentos de comando de terminal, npm e vscode.
+## After cloning the repository, follow these steps to download the dependencies
+To proceed with this step, you need to have knowledge of terminal commands, npm, and VSCode.
 
-**1º Etapa:** Abra o projeto no vscode e depois abra dois terminais, sendo um para entrar na pasta do backend e a outra para a pasta do frontend.
+**1º step:** Open the project in VSCode and then open two terminals, one for the backend folder and the other for the frontend folder
 
-**2º Etapa:** Após acessar as duas pastas no terminal, digite no terminal de ambas o seguinte comando:
+**2º step:** After accessing both folders in the terminal, enter the following command in both terminals:
 ```
 npm i
 ```
-> Terminando de instalar todas as dependências, os dois projetos estão prontos para serem executados, para entender como executar cada um, siga o passo a passo a seguir.
+> Once all dependencies have finished installing, both projects are ready to be executed. To understand how to run each one, follow the step-by-step guide below.
 
-## 📙 Manual do projeto front-end
-Para rodar a aplicação front-end, á para o terminal onde está aberto a pasta frontend e digite o seguinte comando: 
+## 📙 Front-end Project Guide
+To run the front-end application, go to the terminal where the frontend folder is open and type the following command:
 ```
 npm run dev
 ```
-> Quando a aplicação começar a rodar, clique no link que está escrito no console do terminal para poder acessar a aplicação na web.
+> When the application starts running, click on the link shown in the terminal console to access the web application.
 
-**Obs.:** Para poder visualizar a tabela, é necessário que o back-end esteja rodando e que tenha dados no banco de dados.
+**Note:** To view the table, it's necessary for the backend to be running and have data in the database.
 
 
-<img align="center" alt="Print da aplicação front-end" src="https://github.com/Marlinsk/desafio-dev-fullstack-jr/blob/main/.github/Print%20recortado%20da%20aplica%C3%A7%C3%A3o%20front-end.png">
+<img align="center" alt="Printscreen" src="https://github.com/Marlinsk/desafio-dev-fullstack-jr/blob/main/.github/Print%20recortado%20da%20aplica%C3%A7%C3%A3o%20front-end.png">
 
-## 📙 Manual do projeto back-end
-Para rodar a aplicação back-end, vá para o terminal onde está aberto a pasta backend e digite o seguinte comando:
+## 📙 Back-end Project Guide
+To run the back-end application, go to the terminal where the backend folder is open and type the following command:
 ```
 npm run start:dev
 ```
-> Se quiser executar sem o modo dev é só tirar o :dev
+> If you want to run it without the dev mode, simply remove the :dev part.
 
-Porta em que o projeto roda
+Port on which the project runs
 ```
 localhost:4015
 ```
-> O projeto rodará na porta 4015, caso deseje mudar vá para o arquivo main e mude a porta. **Aviso:** Alterando a porta, será necessário que mude também no front-end na pasta src/api/Api.ts. 
+> The project will run on port 4015. If you want to change it, go to the main file and modify the port. Note: If you change the port, make sure to also change it in the front-end in the src/api/Api.ts file.
 
-### Acessando o prisma studio
-O banco de dados utilizado no projeto foi o sqlite, que é um banco de dados que fica armazenado internamente na pasta do projeto, facilitando a conexão e podendo ser acessado para modificar os dados das tabelas, utilizando-se tanto pelo **beekeeper studio** quanto pelo **prisma**. Para esta ocasião utilizaremos o **prisma**.
-Para acessar o prisma studio, vá para o terminal do back-end e digite o seguinte comando:
+### Accessing Prisma Studio
+The database used in the project is SQLite, which is a database stored internally in the project folder, making it easy to connect to and can be accessed to modify table data using either **beekeeper studio** or **prisma**. For this case, we will use **prisma**.
+
+To access Prisma Studio, go to the backend terminal and type the following command:
 ```
 npx prisma studio
 ```
-> Após a execução irá abrir uma página da web onde nela você acessará as tabelas, criar dados, modificá-los e deletá-los. Para sair basta fechar a guia dele no browser, e apertar **CTRL + C** no terminal.
+> After execution, a web page will open where you can access tables, create data, modify them, and delete them. To exit, simply close the tab in your browser and press **CTRL + C** in the terminal.
 
-### Acessando a documentação OpenAPI das rotas http na web
-Para acessar a documentação da OpenAPI basta digitar a seguinte url
+### Accessing the OpenAPI Documentation for HTTP Routes Online
+To access the OpenAPI documentation, enter the following URL:
 ```
 localhost:4015/doc
 ```
-> Na documentação OpenAPI você verá como executa cada requisição http e ver sua resposta de retorno. Caso deseje botar em prática pelo Postman ou Insomnia, você precisará pegar o esquema de cada rota url descrita na documentação, além de cópiar o json para fazer as requisições post e delete.
+> In the OpenAPI documentation, you will see how to perform each **HTTP request** and view its response. If you want to put it into practice using Postman or Insomnia, you will need to take the schema for each URL route described in the documentation and copy the **JSON** to make **POST** and **DELETE** requests.
 
-### Descrição das rotas
-Descrição da funcionalidade de cada rota http presente no back-end.
+### Route Descriptions
+Route Descriptions
 
-**POST** Create Empresa:
+**POST** Create Empresa (Create Company):
 
-Cria uma empresa
-
-> /empresa
-
-**GET** Find Empresa by ID:
-
-Mostra os dados de uma empresa, é necessário passar o ID da empresa pelas Path Variables do request.
-
-> /empresa/:id
-
-**GET** List All Empresas:
-
-Lista todas as empresas cadastradas:
+Creates a company.
 
 > /empresa
 
-**PATCH** Update Empresa:
+**GET** Find Empresa by ID (Find Company by ID):
 
-Nesta rota é possível fazer a atualização nos dados da empresa, é necessário passar o ID da empresa pelas Path Variables do request, e depois passar o json no body, detalhe, não precisa ter o id no corpo do json, só no path
+Displays the data of a company. You need to pass the company's ID through the Path Variables of the request.
 
 > /empresa/:id
 
-**DELETE** Delete Empresa:
+**GET** List All Empresas (List All Companies):
 
-Nesta rota é possível deletar uma empresa, pelo ID informado no Path Variables.
+Lists all registered companies.
+
+> /empresa
+
+**PATCH** Update Empresa (Update Company):
+
+In this route, you can update company data. You need to pass the company's ID through the Path Variables of the request and then pass the JSON in the request body. Please note that you don't need to include the ID in the JSON body, only in the path.
+
+> /empresa/:id
+
+**DELETE** Delete Empresa (Delete Company):
+
+In this route, you can delete a company by providing the ID in the Path Variables.
 
 > /empresa/:id
 
